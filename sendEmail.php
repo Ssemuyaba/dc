@@ -1,11 +1,11 @@
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 	$name=
-	htmlspecialchars($_POST['CName']);
+	htmlspecialchars($_POST['cName']);
 	$email=
-	htmlspecialchars($_POST['CEmail']);
+	htmlspecialchars($_POST['cEmail']);
 	$message=
-	htmlspecialchars($_POST['CMessage']);
+	htmlspecialchars($_POST['cMessage']);
 
 	$to ="reflectdc256@gmail.com";
 
