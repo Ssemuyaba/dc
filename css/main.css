@@ -3713,28 +3713,5 @@ html.no-csstransitions .hero-content {
 
 
 
-/* Positioning the buttons at the bottom right corner */
-.fixed-buttons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
-
-
-    #shareMenu {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .hidden { display: none; }
 
