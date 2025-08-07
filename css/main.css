@@ -3852,3 +3852,45 @@ html.no-csstransitions .hero-content {
         background: url('images/fallback.jpg') center center / cover no-repeat;
     }
 }
+
+
+.modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      margin: auto;
+      background: #fff;
+      padding: 0;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 700px;
+      height: 80%;
+    }
+
+    .modal iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .close {
+      color: #aaa;
+      font-size: 30px;
+      font-weight: bold;
+      float: right;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+
