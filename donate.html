@@ -24,7 +24,25 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script  src="js/but.js"></script>
+    <script>
+  const modal = document.getElementById("formModal");
+  const btn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple.png">
@@ -117,18 +135,16 @@
         <h1>Make a Donation</h1>
         <p>Your support helps us create lasting change. Please use the method below to process your donation.</p>
         
+        
         <div class="donation-methods">
-            <div class="method">
-                <h3>1. Bank Transfer</h3>
-                <p><strong>Director,s Account Name:</strong> Musoni Geoffery</p>
-                <p><strong>Account Number:</strong> 6006232653</p>
-                <p><strong>Bank:</strong> ABSA Bank</p>
-                 <p><strong>Swift Code:</strong> BARCUGKX</p>
-                <p>Please make your transfer using the details above. Once completed, you can email us at <a href="mailto:reflectdc256@gmail.com">reflectdc256@gmail.com</a> to confirm your donation.</p>
-            </div>
-            
-           
+           <button id="openModal">Donate</button>
         </div>
+       <div id="formModal" class="modal">
+          <div class="modal-content">
+             <span class="close" id="closeModal">&times;</span>
+                <iframe src="https://form.jotform.com/252184202988563"></iframe>
+            </div>
+       </div>
 
         <div class="contact-info">
             <p>Need help? Contact us at <a href="mailto:reflectdc256@gmail.com">Email Us</a> or call +256-741127615.</p>
